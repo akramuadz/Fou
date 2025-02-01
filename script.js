@@ -1,4 +1,17 @@
-window.addEventListener('DOMContentLoaded', () => {
-    const audio = document.querySelector('audio');
-    audio.volume = 0.5; // Set default volume
+document.addEventListener("DOMContentLoaded", () => {
+    const audio = document.getElementById("bg-music");
+    const audioToggle = document.getElementById("audio-toggle");
+
+    let isPlaying = false;
+
+    audioToggle.addEventListener("click", () => {
+        if (isPlaying) {
+            audio.pause();
+            audioToggle.textContent = "🔇";
+        } else {
+            audio.play();
+            audioToggle.textContent = "🎵";
+        }
+        isPlaying = !isPlaying;
+    });
 });
