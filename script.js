@@ -1,9 +1,19 @@
-// Contoh: Alert saat halaman dimuat
+// Animasi saat halaman dimuat
 window.onload = function() {
-    alert("Selamat datang di website saya!");
+    document.body.classList.add('loaded');
 };
 
-// Contoh: Menambahkan efek klik ke tombol (jika ada)
-document.querySelector('nav a').addEventListener('click', function() {
-    console.log('Tombol diklik!');
+// Validasi form kontak
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    if (name && email && message) {
+        alert('Pesan Anda telah terkirim!');
+        document.getElementById('contactForm').reset();
+    } else {
+        alert('Harap isi semua field!');
+    }
 });
