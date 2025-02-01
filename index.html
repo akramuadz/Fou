@@ -5,19 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Birthday Sayang</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
-    <audio autoplay loop>
+    <div class="container">
+        <header>
+            <h1>Happy Birthday, Sayang</h1>
+        </header>
+        <main>
+            <p class="message">Selamat ulang tahun, cintaku! Semoga hari ini dipenuhi dengan kebahagiaan dan cinta. Aku bersyukur bisa bersamamu dan berbagi setiap momen indah ini. Aku mencintaimu selamanya! ❤️</p>
+            <div class="photo-container">
+                <img src="your-photo.jpg" alt="Foto Kita Berdua">
+            </div>
+        </main>
+        <footer>
+            <span>Kamu</span> | <span>Aku</span>
+        </footer>
+    </div>
+    <audio id="bg-music" loop>
         <source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3" type="audio/mp3">
     </audio>
-    <h1>Happy Birthday Sayang</h1>
-    <div class="content">
-        <p>Sayang, di hari yang istimewa ini, aku ingin mengucapkan selamat ulang tahun yang penuh cinta dan kebahagiaan. Semoga semua impianmu menjadi kenyataan, dan kamu selalu dikelilingi oleh orang-orang yang mencintaimu. Aku bersyukur bisa berbagi hari-hari indah bersamamu. Aku mencintaimu selamanya! ❤️</p>
-    </div>
+    <button id="audio-toggle">🎵</button>
     <div class="waves"></div>
-    <div class="footer">
-        <span>Kamu</span> | <span>Aku</span>
-    </div>
-    <script src="script.js"></script>
 </body>
 </html>
