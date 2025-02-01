@@ -1,17 +1,25 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const audio = document.getElementById("bg-music");
-    const audioToggle = document.getElementById("audio-toggle");
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Website Saya</h1>
+    </header>
 
-    let isPlaying = false;
+    <nav>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="about.html">Tentang</a></li>
+            <li><a href="contact.html">Kontak</a></li>
+        </ul>
+    </nav>
 
-    audioToggle.addEventListener("click", () => {
-        if (isPlaying) {
-            audio.pause();
-            audioToggle.textContent = "🔇";
-        } else {
-            audio.play();
-            audioToggle.textContent = "🎵";
-        }
-        isPlaying = !isPlaying;
-    });
-});
+    <main>
+        <section>
+            <h2>Hubungi Saya</h2>
+            <p>In
