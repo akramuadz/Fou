@@ -1,136 +1,41 @@
-/* Reset default margin dan padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 2rem;
+    background: linear-gradient(to bottom, #3a7bd5, #00d2ff);
     text-align: center;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: white;
+    overflow: hidden;
 }
-
-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+h1 {
+    font-size: 3rem;
+    margin-top: 50px;
 }
-
-header p {
-    font-size: 1.2rem;
+.content {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
-
-nav {
-    background-color: #444;
-    padding: 1rem;
+.footer {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
 }
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+.footer span {
+    margin: 0 10px;
 }
-
-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.1rem;
-    transition: color 0.3s ease;
+.waves {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url('https://i.ibb.co/w73cQ1P/wave.png') repeat-x;
+    animation: wave-animation 10s linear infinite;
 }
-
-nav a:hover {
-    color: #ffd700;
-}
-
-main {
-    padding: 2rem;
-}
-
-.hero {
-    background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
-    color: #fff;
-    padding: 4rem 2rem;
-    text-align: center;
-    border-radius: 10px;
-    margin-bottom: 2rem;
-}
-
-.hero h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-}
-
-.btn {
-    background-color: #ffd700;
-    color: #333;
-    padding: 0.8rem 1.5rem;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #e6b800;
-}
-
-.about, .contact {
-    background-color: #fff;
-    padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-bottom: 2rem;
-}
-
-.about h2, .contact h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-.contact form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.contact input, .contact textarea {
-    padding: 0.8rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-.contact button {
-    background-color: #333;
-    color: #fff;
-    padding: 0.8rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.contact button:hover {
-    background-color: #555;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-}
+@keyframes wave-animation {
+    from { background-position: 0 0; }
+    to { background-position: 1000px 0; }
